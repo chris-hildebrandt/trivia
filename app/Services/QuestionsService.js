@@ -1,6 +1,8 @@
 
 
+class QuestionsService{
+  
+}
 
 
-
-export const questionsService = new QuestionsService
+export const questionsService = new QuestionsService()
