@@ -17,19 +17,20 @@
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">trivia</span>
+        <!-- <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+          loading="lazy"> -->
+        <h1 class="">Trivia Trial</h1>
       </a>
     </nav>
   </header>
-  <main>
+  <main class="bg-primary">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <button onclick="app.QuestionsController.test()"></button>
-          <div id="app"></div>
-        </div>
+      <div class="row justify-content-center align-items-center" id="quiz-area">
+        <div class="col-10 card bg-warning"></div>
+        <button class="btn btn-dark col-5 m-5" onclick="app.QuestionsController.test()">A</button>
+        <button class="btn btn-dark col-5 m-5" onclick="app.QuestionsController.test()">B</button>
+        <button class="btn btn-dark col-5 m-5" onclick="app.QuestionsController.test()">C</button>
+        <button class="btn btn-dark col-5 m-5" onclick="app.QuestionsController.test()">D</button>
       </div>
     </div>
   </main>

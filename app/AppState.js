@@ -7,9 +7,17 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/Question').Question[]} */
 
-  questions = [
-    
-  ]
+  questions = []
+
+  user = ''
+
+  score = 0
+  // score = correct * difficulty 1,2,3
+
+  // place buttons in html
+  // next = ''
+
+  // previous = ''
 }
 
 export const ProxyState = new Proxy(new AppState(), {
